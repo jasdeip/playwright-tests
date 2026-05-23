@@ -13,4 +13,6 @@ jobs:
         with:
           node-version: '18'
       - run: npm install
+      - name: Install Playwright browsers
+        run: npx playwright install
       - run: npm test
